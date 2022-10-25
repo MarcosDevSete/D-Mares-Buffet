@@ -1,0 +1,505 @@
+* {
+    font-family: arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   }
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 990px;
+}
+.colorpp{
+    background-color: #f8eef8;
+    padding-left: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 180px;
+}
+
+.logo a img{
+    width: 285px;
+    margin-right: 115px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul, 
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial;
+    margin-left: 3px;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #a200ec;
+    color: #ffffff;
+    margin-left: 3px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/Dec-1.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    color: #ffffff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #c06ee0;
+}
+
+.banner2 {
+    background-color: #a850d4;
+}
+
+.banner3 {
+    background-color: #a434c0;
+}
+
+
+.banner_title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.banner_desc {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.dia {
+    display: flex;
+    justify-content: space-between;
+    border-block-end: 2px solid #9370DB;
+    margin-block: 25px;
+    padding-bottom: 2px;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#geral section {
+    flex: 2
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title-text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 3px;
+    background-color: #a434c0;
+    margin-top: 10px;
+}
+
+.widget_body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.widget_body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #0079c7;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.widget_body1 a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.widget_body1:hover {
+    background-color: #2b4c99;
+}
+
+.departaments_text {
+    font-weight: normal;
+    font-size: 10px;
+    margin: auto
+}
+
+.make_text {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.widget_contact {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.contact_img {
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news_comments {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img {
+    width: 320px;
+    height: 320px;
+}
+
+
+
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+
+article .news_resume {
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget_body_footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #ffffff;
+    align-items: flex-start;
+}
+.footer_contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer_adress {
+    flex: 1;
+    font-size: 12px;
+}
+.foot_number {
+    flex: 1;
+    font-size: 12px;
+}
+.footer_area p {
+    line-height: 18px;
+}
+.time_posts {
+    font-size: 11px;
+    color: #0079c7;
+}
+span {
+    color: #fff;
+}
+span a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer_area {
+    display: flex;
+}
+
+.footer_areaitem {
+    flex: 1;
+    color: #ffffff;
+    font-size: 21px;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget_title_text {
+    color: #ffffff;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+ /*modificar o whats*/
+.logoWtt{
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+}
+
+.logoWtt a  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10000px;
+}
+ /*modificar o whats final*/
+
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+        margin-top: 87px;
+        width: 260px;
+        font-size: 43px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+        margin-top: 9px;
+    }
+    .banner_options {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+        position: fixed;
+        z-index: 999;
+        background-color: white;
+    }
+    nav ul {
+        margin-top: 8px;
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100%;
+         color: white; 
+        background-color: #6d089cb6;
+    }
+    header {
+        height: auto;
+        width: 100px;
+    }
+    .logo {
+        padding-left: 120px;
+        margin: 0px;
+    }
+
+    .logo a img{
+        margin: 0px;
+        padding-left: 180px;
+        margin-right: 62px;
+        width: 274px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .active a{
+        background-color: #ede5f123;
+    }
+
+    .widget_title-text-footer{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    }
+    article .news_resume{
+        font-size: 18px;
+    }
+    nav ul{
+        background-color: none;
+    }
+    nav ul li a{
+        color: white;
+    }
+    /*modificar o whats*/
+    .logoWtt{
+        position: fixed;
+        bottom: -5px;
+        right: 3px;
+    }
+}    
